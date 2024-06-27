@@ -157,7 +157,7 @@ function retreve(arr,cOrF){
                     </div>
                     <div class="body d-flex justify-content-center align-items-center  flex-column p-4">
                         <img src="https:${arr.forecast.forecastday[1].day.condition.icon}" alt="#">
-                        <p>${arr.forecast.forecastday[1].day[maxtemp]}<sup>o</sup>${cOrF}</p>
+                        <p class='fs-2'>${arr.forecast.forecastday[1].day[maxtemp]}<sup>o</sup>${cOrF}</p>
                         <p>${arr.forecast.forecastday[1].day[mintemp]}<sup>o</sup>${cOrF}</p>
                         <p class='text-info'>${arr.forecast.forecastday[1].day.condition.text}</p>
                     </div>
@@ -169,7 +169,7 @@ function retreve(arr,cOrF){
                     </div>
                     <div class="body d-flex justify-content-center align-items-center  flex-column p-4">
                         <img src="https:${arr.forecast.forecastday[2].day.condition.icon}" alt="#">
-                        <p>${arr.forecast.forecastday[2].day[maxtemp]}<sup>o</sup>${cOrF}</p>
+                        <p class='fs-2'>${arr.forecast.forecastday[2].day[maxtemp]}<sup>o</sup>${cOrF}</p>
                         <p>${arr.forecast.forecastday[2].day[mintemp]}<sup>o</sup>${cOrF}</p>
                         <p class='text-info'>${arr.forecast.forecastday[2].day.condition.text}</p>
                     </div>
