@@ -1,0 +1,264 @@
+:root{
+    --mainColorDark:#1e202b;
+    --mainColorLight:#323544;
+    --cardHeader:#2d303d;
+}
+
+.header p{
+    padding: 0;
+    margin: 0;
+}
+
+nav,input{
+    background-color: var(--mainColorDark) !important;
+}
+nav p, nav h1,nav a{
+    color: white !important;
+}
+.btnF{
+    top:5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+#email,#search{
+    border: none;
+    color: white !important;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgb(192, 190, 190) !important;
+}
+
+header{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../imge/old-jerusalem1-panorama-david-smith.png');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color:var(--mainColorDark) !important;
+}
+.con{
+    margin-top: 8%;
+}
+.temp{
+    font-size: 6.4285714286rem;
+    font-weight: 700;
+}
+
+
+.pInNav{
+    font-size: 10px;
+}
+
+.header{
+    background-color: #2d303d;
+}
+
+.cardd,footer{
+    background-color: var(--mainColorLight);
+}
+.cardd1{
+    background-color: #262936;
+}
+
+.body{
+    height: 70%;
+}
+.content{
+    margin-top: 6%;
+    margin-bottom: 3%;
+    color: white !important;
+}
+
+.header1{
+    background-color: #222530;
+}
+.rounddd{
+    border-top-left-radius: 10px;
+}
+.car-round{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.rounddd1{
+    border-top-right-radius: 10px;
+}
+.car-round1{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+.social-links i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s all ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+}
+
+.social-links i:hover{
+    background: #009ad8;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #009ad8;
+}
+
+.navbar-nav .nav-link.active{
+    transition: color 0.3s , border 0.3s ;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    color: white !important;
+    border-color: transparent;
+    border-radius: 50%;
+}
+
+.navbar-toggler:hover{
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+
+.navbar-nav .nav-item .nav-link:not(.active):hover{
+    border-color: #009ad8;
+    color: #009ad8 !important;
+}
+
+.navbar-nav .nav-link.active{
+    color: #009ad8 !important;
+    border: 2px solid #009ad8 !important;
+    border-radius: 20px !important;
+}
+.navbar-nav .nav-item .nav-link{
+    border: 2px solid transparent;
+    border-radius: 20px !important;
+}
+
+.Typeofthermometer,.language{
+    background-color: var(--mainColorLight);
+    top: 75px;
+}
+
+.contact-info,.contact-info a{
+    color: #bfbfc4 !important;
+}
+
+.contact{
+    background-color: var(--mainColorDark);
+}
+
+.contact-details{
+    background-color: #262936;
+}
+
+.s-part{
+    color: white !important;
+}
+
+.palistine {
+    padding: 10px;
+    font-size: 13px;
+    top: 36px;
+    right: 10px;
+    background-color: white;
+}
+
+.t-color{
+    color: #8b8c91 !important;
+}
+.t-color1{
+    color: #bbbabb;
+}
+
+
+
+@media (max-width:880px){
+    header{
+        background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imge/97.jpg);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:992px){
+    .body{
+        height: 100%;
+    }
+    .rounddd{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .car-round{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .rounddd1{
+        border-top-right-radius: 0;
+    }
+    .car-round1{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    .Typeofthermometer{
+        left: 0px;
+        top:60%;
+        transform: translateY(-50%);
+    }
+    .language{
+        left: 0px;
+        top:70%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width:490px){
+    .palistine{
+        padding: 0;
+        margin-right: 5px;
+    }
+    .temp{
+        font-size: 4.4285714286rem;
+    }
+}
+
+
+@media (max-width:423px){
+    .palistine {
+        padding: 0;
+        margin-right: 0;
+        left: 164px;
+        top: 13px;
+        width: 40px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .palistine {
+        padding: 10px;
+        top: 10px;
+        left: 151px;
+        width: 40px;
+    }
+    .temp{
+        font-size: 5.4285714286rem;
+    }
+}
+

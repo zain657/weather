@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>random quote</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="imge/imge1.png" alt="weather logo">
+                <div class="d-flex justify-content-center align-items-center flex-column p-2">
+                    <h1 class="fs-6 m-0">Weather</h1>
+                    <p class="m-0 pInNav">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon  fa-solid fa-bars mt-2"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item ">
+                        <a id="home" class="nav-link active px-4 py-1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="news" class="nav-link px-3 py-1" href="#">News</a>
+                    </li class='position-relative'>
+                    <li class="nav-item ">
+                        <a id="TypeofthermometerBtn" class="nav-link px-3 py-1" href="#">'C°' or '°F'</a>
+
+
+                        <div id="Typeofthermometer" class="Typeofthermometer invisible d-flex flex-column text-white position-absolute p-3 rounded-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="celsius" checked>
+                                <label class="form-check-label" for="celsius">
+                                    Celsius'C°'
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="fahrenheit" >
+                                <label class="form-check-label" for="fahrenheit">
+                                    Fahrenheit'°F'
+                                </label>
+                            </div>
+                        </div>
+            
+                    </li>
+                    <li class="nav-item ">
+                        <a id="langBtn" class=" nav-link px-3 py-1" href="#">Language</a>
+
+
+                        <div id="language" class="language invisible d-flex flex-column text-white position-absolute p-3 rounded-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="ar" checked>
+                                <label class="form-check-label" for="ar">
+                                    العربية
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="en">
+                                <label class="form-check-label" for="en">
+                                    English
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="contBtn" class="nav-link px-3 py-1" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <header id="header" class="overflow-hidden">
+        <div class="container con px-lg-5 py-2">
+            <div class="position-relative ">
+                <input type="text" class="form-control rounded-pill p-3" id="search"
+                    placeholder="Find your location...">
+                <button class="btn btn-info text-white position-absolute btnF z-1 px-4 rounded-pill">Find</button>
+            </div>
+            <div id="row" class="row content p-md-0 p-4">
+                <div class="col-lg-4 p-0 m-0 border-0 cardd car-round">
+                    <div class="header rounddd d-flex justify-content-between align-items-center p-2 px-2">
+                        <p>day11</p>
+                        <p>date</p>
+                    </div>
+                    <div class="body d-flex justify-content-start  flex-column  p-4">
+                        <h3>cairo</h3>
+                        <p class="temp">33.2oC</p>
+                        <img src="" alt="#">
+                        <p>clear</p>
+                        <div class="d-flex justify-content-start align-items-center  gap-4">
+                            <p><img src="" alt="#"> 20%</p>
+                            <p><img src="" alt="#"> 20%</p>
+                            <p><img src="" alt="#"> 20%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 p-0 m-0 border-0 cardd1">
+                    <div class="header1 header d-flex justify-content-center align-items-center p-2">
+                        <p>day11</p>
+                    </div>
+                    <div class="body d-flex justify-content-center align-items-center  flex-column p-4">
+                        <img src="" alt="#">
+                        <p>80</p>
+                        <p>20</p>
+                        <p>clear</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 p-0 m-0 border-0 car-round1 cardd">
+                    <div class="header d-flex justify-content-center rounddd1   align-items-center p-2">
+                        <p>day11</p>
+                    </div>
+                    <div class="body d-flex justify-content-center align-items-center  flex-column p-4">
+                        <img src="" alt="#">
+                        <p>80</p>
+                        <p>20</p>
+                        <p>clear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="contact" class="contact d-none overflow-auto">
+        <div class="container my-5">
+            <div class="row">
+                <div class="f-part  col-lg-5 my-5">
+                    <div class="contact-details rounded-3 ">
+                        <div class="map position-relative">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108513.54042461529!2d35.25775978239909!3d31.79643797015008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2z2KfZhNmC2K_Ys9iMINil2LPYsdin2KbZitmE!5e0!3m2!1sar!2s!4v1719326777161!5m2!1sar!2s"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="rounded-top-3" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p class="palistine position-absolute fw-medium">فلسطين</p>
+                        </div>
+                        <div class="contact-info p-3">
+                            <address class="col-12 d-flex mt-3">
+                                <img class="me-3" src="https://routeweather.netlify.app/images/icon-marker@2x.png"
+                                    alt="" width="12" height="19">
+                                <p>Company Name INC. <br>
+                                    2803 Avenue Street, Los Angeles</p>
+                            </address>
+
+                            <div class="col-12 mb-3">
+                                <a class="me-3" href="#"><img class="me-3"
+                                        src="https://routeweather.netlify.app/images/icon-phone@2x.png" alt=""
+                                        width="19" height="19">+1 800 314 235</a>
+                                <a href="#"><img class="me-3"
+                                        src="https://routeweather.netlify.app/images/icon-envelope@2x.png" alt=""
+                                        width="16" height="12">contact@companyname.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-part col-lg-6 my-5 offset-lg-1">
+                    <div class="content1">
+                        <h2 class="section-title">Contact us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                            ducimus,
+                            facilis,
+                            numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit
+                            hic,
+                            ipsum
+                            sed!</p>
+                        <form action="#" class="contact-form mt-3">
+                            <div class="row mb-3">
+                                <div class="col-md-6"><input class="form-control rounded-pill p-2 text-white"
+                                        type="text" placeholder="Your name..."></div>
+                                <div class="col-md-6"><input class="form-control rounded-pill p-2 text-white"
+                                        type="text" placeholder="Email Addresss..."></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><input class="form-control rounded-pill p-2 text-white"
+                                        type="text" placeholder="Company name..."></div>
+                                <div class="col-md-6"><input class="form-control rounded-pill p-2 text-white"
+                                        type="text" placeholder="Website..."></div>
+                            </div>
+                            <textarea style="height: 160px;"
+                                class="form-control my-3 rounded-5 bg-transparent text-white" name=""
+                                placeholder="Message..."></textarea>
+                            <div class="text-right d-flex justify-content-end">
+                                <button class="btn btn-info rounded-pill text-white me-0" type="submit">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="overflow-auto">
+        <div class="container mt-4 mb-5">
+            <div class="row ">
+                <div class="col-lg-8">
+                    <div class="position-relative ">
+                        <input type="email" class="form-control rounded-pill p-3 " id="email"
+                            aria-describedby="emailHelp" placeholder="Enter your  email to subscribe...">
+                        <button
+                            class="btn btn-info text-white position-absolute btnF z-1 d-flex align-items-center px-4 rounded-pill">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="social-links w-100 d-flex gap-1 flex-nowrap ">
+                        <a class="d-inline-block " href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="d-inline-block " href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="d-inline-block " href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a class="d-inline-block " href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="my-3 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
