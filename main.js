@@ -115,7 +115,7 @@ async function getApi(country, lang) {
         var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=ec14f0933802472c9cd193136242506&q=${country}&days=3&lang=${lang}`);
         data = await response.json();
         console.log(data);
-        retreve(data,'c');
+        retreve(data,chooseFOrC());
     }
     catch (error) {
         console.log(error);
