@@ -191,7 +191,14 @@ function getDay1(x){
         weekDay=['الاحد','الاثنين','الثلاثاء','الاربعاء','الخميس','الجمعة','السبت'];
     }
     var dateNow=new Date();
-    day=weekDay[dateNow.getDay()+x];
+    var dayInNum=dateNow.getDay();
+    if(dayInNum==6){
+        x=-6*x;
+        if(x==-12){
+            x=-5;
+        }
+    }
+    day=weekDay[dayInNum+x];
 
     return day
 }
